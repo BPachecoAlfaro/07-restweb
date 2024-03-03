@@ -55,7 +55,6 @@ export class TodosController {
             ? todo.completedAt = null
             : todo.completedAt = new Date( completedAt || todo.completedAt );
 
-
         res.json( todo );
 
     };
